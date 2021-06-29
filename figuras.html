@@ -4,12 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras geométricas</title>
+    <title>Práctico de JS</title>
+    <link rel="stylesheet" href="./css/figuras.css">
     <script src="./figuras.js"></script>
 </head>
 <body>
-    <h1>Figuras geométricas</h1>
-
+    <header>
+        <h1>ESTE ES EL CURSO PRÁCTICO DE JAVASCRIPT DE PLATZI</h1>
+    </header>
+    <section class="informativo">
+        <p>FIGURAS GEÓMETRICAS</p>     
+    </section>
+    <div class="figurasgeometricas">
+        <section class="figurasgeometricas-ind-1">
+            <h2>Calcula el area y perimetro de un Cuadrado</h2>
+            <form action="">
+                <label class="labelcuadrado" for="cuadrado">Escribe cuanto mide cada lado del cuadrado</label>
+                <input id="cuadrado" required type="number" class="inputcuadrado">
+                <div class="buttonscuadrado">
+                    <button type="button" onclick="calcularperimetrocuadrado()">Calcular el perimetro</button>
+                    <button type="button" onclick="calcularareacuadrado()">Calcular el área</button>
+                </div>
+            </form>
+        </section>
+        <section class="figurasgeometricas-ind-2">
+            <h2>Calcula el area y perimetro de un Triangulo</h2>
+            <form action="">
+                <div class="cadalado">
+                    <label class="labeltriangulo" for="lado1">Escribe cuanto mide un lado del triángulo</label>
+                    <input class="inputtriangulo" required id="lado1" type="number">
+                </div>
+                <div class="cadalado">
+                    <label class="labeltriangulo" for="lado2">Escribe cuanto mide un lado del triángulo</label>
+                    <input class="inputtriangulo" required id="lado2" type="number">
+                </div>
+                <div class="cadalado">
+                    <label class="labeltriangulo" for="base">Escribe cuanto mide la base del triángulo</label>
+                    <input class="inputtriangulo" required id="base" type="number">
+                </div>
+                <div class="cadalado">
+                    <label class="labeltriangulo" for="altura">Escribe cuanto mide la altura del triángulo</label>
+                    <input class="inputtriangulo" required id="altura" type="number">
+                </div>
+                <div class="buttonstriangulo">
+                    <button type="button" onclick="calcularperimetrotriangulo()">Calcular el perimetro</button>
+                    <button type="button" onclick="calcularareatriangulo()">Calcular el área</button>
+                </div>
+            </form>
+        </section>
+        <section class="figurasgeometricas-ind-3">
+            <h2>Calcula el area y perimetro de un Circulo</h2>
+            <form action="">
+                <label class="labelcirculo" for="radio">Escribe cuanto mide el radio del Circulo</label>
+                <input class="inputcirculo" required id="radio" type="number">
+                <div class="buttonscirculo">
+                    <button type="button" onclick="calcularperimetrocirculo()">Calcular el perimetro</button>
+                    <button type="button" onclick="calcularareacirculo()">Calcular el área</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <div class="figurasgeometricas2">
+        <section class="figurasgeometricas-ind-4">
+            <h2>Calcula el area y perimetro de un Triangulo isóceles</h2>
+            <form action="">
+                <div class="cadalado">
+                    <label class="labeltriangulo" for="lado1">Escribe cuanto mide un lado del triángulo</label>
+                    <input class="inputtriangulo" required id="lado4" type="number">
+                </div>
+                <div class="cadalado">
+                    <label class="labeltriangulo" for="lado2">Escribe cuanto mide un lado del triángulo</label>
+                    <input class="inputtriangulo" required id="lado5" type="number">
+                </div>
+                <div class="cadalado">
+                    <label class="labeltriangulo" for="base">Escribe cuanto mide la base del triángulo</label>
+                    <input class="inputtriangulo" required id="base2" type="number">
+                </div>
+                <!-- <div class="cadalado">
+                    <label class="labeltriangulo" for="altura">Escribe cuanto mide la altura del triángulo</label>
+                    <input class="inputtriangulo" required id="altura" type="number">
+                </div> -->
+                <div class="buttonstriangulo">
+                    <button type="button" onclick="calcularperimetrotrianguloiso()">Calcular el perimetro</button>
+                    <button type="button" onclick="calcularareatrianguloiso()">Calcular el área</button>
+                </div>
+            </form>
+        </section>
+    </div>
+        
 
 
 </body>

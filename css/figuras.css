@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    background-color: #1b2127;
+}
+header{
+    padding: 2% 0% 2% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.informativo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.figurasgeometricas{
+    display: flex;
+    padding: 2%;
+}
+h2{
+    text-align: center;
+    margin: 0 0 40px 0;
+
+}
+.figurasgeometricas-ind-1{
+    padding: 2%;
+    width: 33%;
+    height: 400px;
+    /* color: white; */
+    background-color: gold;
+    /* background-image: url("../imagenes/cuadrado.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 90%; */
+    margin: 0 1%;
+    color: black;
+    border-radius: 10%;
+    align-items: center;
+    text-align: center;
+}
+.labelcuadrado{
+    font-size: 20px;
+    margin: 0px 0 20px 0;
+    color: black;
+}
+.inputcuadrado{
+    padding:5px;
+    margin:20px 0 20px 0;
+    
+}
+
+.buttonscuadrado button{
+    margin: 5px;
+    border-radius: 2px;
+}
+.figurasgeometricas-ind-2{
+    padding: 2%;
+    width: 33%;
+    height: 400px;
+    /* color: white; */
+    background-color: gold;
+    margin: 0 1%;
+    /* background-image: url("../imagenes/triangulo.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 90%; */
+    border-radius: 10%;
+    color: black;
+    text-align: center;
+}
+.labeltriangulo{
+    font-size: 20px;
+    margin: 0px 0 0 0;
+    color: black;
+}
+.cadalado{
+    margin-bottom: 10px;
+}
+.inputtriangulo{
+    padding:5px;
+    margin:0 0 0 0;
+    
+}
+
+.buttonstriangulo button{
+    margin: 5px;
+    border-radius: 2px;
+}
+.figurasgeometricas-ind-3{
+    padding: 2%;
+    width: 33%;
+    height: 400px;
+    /* color: white; */
+    background-color: gold;
+    margin: 0 1%;
+    /* background-image: url("../imagenes/circulo.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 60%; */
+    border-radius: 10%;
+    color: black;
+    text-align: center;
+}
+.labelcirculo{
+    font-size: 20px;
+    margin: 0px 0 20px 0;
+    color: black;
+}
+.inputcirculo{
+    padding:5px;
+    margin:20px 0 20px 0;
+    
+}
+
+.buttonscirculo button{
+    margin: 5px;
+    border-radius: 2px;
+}
+.figurasgeometricas-ind-4{
+    padding: 2%;
+    width: 33%;
+    height: 400px;
+    /* color: white; */
+    background-color: gold;
+    margin: 0 1%;
+    /* background-image: url("../imagenes/triangulo.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 90%; */
+    border-radius: 10%;
+    color: black;
+    text-align: center;
+}
+.figurasgeometricas2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
