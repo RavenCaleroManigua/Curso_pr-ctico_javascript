@@ -163,4 +163,32 @@ function calcularareatrianguloiso(){
         alert(alerta)
     }   
 }
-//
+//Aquí empieza el calculo de porcentajes y descuentos.
+
+/* const precioriginal = 120;
+const descuento = 18;
+ */
+
+/* console.log({
+    precioriginal,
+    descuento,
+    porcentajecondescuento,
+    preciocondescuento
+}); */
+function calcularpreciocondescuento(precioriginal,descuento){
+    const porcentajecondescuento = 100-descuento ;
+    const preciocondescuento = (precioriginal*(porcentajecondescuento))/100;
+    return preciocondescuento
+    
+};
+
+function calcularprecio(){
+    const input= document.getElementById("precio");
+    const input2= document.getElementById("descuento");
+    const value1 = Number(input.value);
+    const value2 = Number(input2.value);
+    const preciofinal= calcularpreciocondescuento(value1,value2);
+    const ResultP= document.getElementById("ResultP");
+    ResultP.innerText = "El resultado del precio con descuento es: $"+preciofinal
+
+}

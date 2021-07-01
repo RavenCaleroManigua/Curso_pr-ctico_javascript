@@ -91,6 +91,30 @@
             </form>
         </section>
     </div>
+    <section class="informativo">
+        <p>PORCENTAJES Y DESCUENTOS</p>     
+    </section>
+    <div class="porcentajesdescuentos">
+        <section class="porcentajescondescuento">
+            <h2>Calcula el precio con descuento de un artículo</h2>
+            <form action="">
+                <div>
+
+                    <label class="labelprecio" for="precio">Escribe el precio original del artículo</label>
+                    <input id="precio" required type="number" class="inputprecio">
+                </div>
+                <div>
+                    <label class="labeldescuento" for="descuento">Escribe el descuento a aplicar</label>
+                <input id="descuento" required type="number" class="inputdescuento">
+                </div>
+                
+                <div class="buttonsprecio">
+                    <button type="button" onclick="calcularprecio()">Calcular el precio con descuento</button>
+                    <p id="ResultP"></p>                    
+                </div>
+            </form>
+        </section>
+    </div>
         
 
 

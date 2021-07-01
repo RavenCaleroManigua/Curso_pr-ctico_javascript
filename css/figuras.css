@@ -147,3 +147,43 @@ h2{
     align-items: center;
     padding: 2%;
 }
+/*Desde aca porcentajes y descuentos*/
+
+.porcentajesdescuentos{
+    display: flex;
+    padding: 2%;
+    align-items: center;
+    justify-content: center;
+}
+.porcentajescondescuento{
+    padding: 2%;
+    width: 33%;
+    height: 400px;
+    /* color: white; */
+    background-color: gold;
+    /* background-image: url("../imagenes/cuadrado.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 90%; */
+    margin: 0 1%;
+    color: black;
+    border-radius: 10%;
+    align-items: center;
+    text-align: center;
+}
+.labelprecio,.labeldescuento{
+    font-size: 20px;
+    margin: 0px 0 20px 0;
+    color: black;
+}
+.inputprecio,.inputdescuento{
+    padding:5px;
+    margin:20px 0 20px 0;
+    
+}
+
+.buttonsprecio button{
+    margin: 5px;
+    border-radius: 2px;
+}
