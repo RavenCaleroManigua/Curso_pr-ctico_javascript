@@ -192,3 +192,113 @@ function calcularprecio(){
     ResultP.innerText = "El resultado del precio con descuento es: $"+preciofinal
 
 }
+
+//Aquí empieza el calculo para promedio, mediana y moda 
+
+/* const lista = [
+    100,
+    200,
+    300,
+    500
+]; */
+
+
+function calcularpromedio(lista){
+    /* let sumalista = 0;
+
+    for(let i=0;i < lista.length;i++){
+        sumalista = sumalista + lista[i];
+    } */
+    const sumalista = lista.reduce(
+        function (valoracumulado=0,nuevoelemento){
+            return valoracumulado+nuevoelemento;
+        }
+    );
+    const promedio= sumalista/lista.length;
+    return promedio;
+}
+
+/* const lista = [
+    100,
+    200,
+    300,
+    500
+]; */
+function compareNumbers(a, b) {
+    return a - b;
+}
+function calcularmediana(lista){
+    const mitadlista = parseInt(lista.length/2);
+    let mediana;
+    const listasort=lista.sort(function(a, b){
+        return a - b;
+    });
+    console.log(listasort);
+    /* function espar(numerito){
+       if(numerito%2===0){
+            return true;
+        }else{
+            return false;
+        }
+    } */
+    if (lista.length%2===0){
+        const elemento1= lista[mitadlista-1];
+        const elemento2= lista[mitadlista];
+        const elemento3 = calcularpromedio([
+            elemento1,
+            elemento2
+    
+        ]);
+        mediana = elemento3;
+        return mediana
+    }
+    else{
+        mediana = lista[mitadlista];
+        return mediana
+    
+    }
+
+}
+
+/* const listamoda = [
+    1,
+    2,
+    3,
+    4,
+    1,
+    2,
+    3,
+    4,
+    1,
+    2,
+    3,
+    4,
+    4
+]; */
+function calcularmoda(listamoda){
+    
+    const listacount = {};
+    
+    listamoda.map(
+        function (elementos){
+            if (listacount[elementos]){
+                listacount[elementos] += 1;
+            }else{
+                listacount[elementos]=1;                
+            }
+        }
+        );
+         
+        const listaaray = Object.entries(listacount).sort(
+            function (elementoa,elementob){
+                return elementoa[1]-elementob[1];
+            }
+        );
+        
+        const mayor = listaaray[listaaray.length-1]
+        return mayor
+};
+        
+    
+
+    
