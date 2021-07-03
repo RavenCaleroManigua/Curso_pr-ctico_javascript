@@ -233,7 +233,7 @@ function calcularmediana(lista){
     const listasort=lista.sort(function(a, b){
         return a - b;
     });
-    console.log(listasort);
+   
     /* function espar(numerito){
        if(numerito%2===0){
             return true;
@@ -299,6 +299,133 @@ function calcularmoda(listamoda){
         return mayor
 };
         
-    
+//Aquí empieza el análisis salarial
 
+const colombia =[];
+colombia.push({
+    name: "Camila",
+    salary: 500,
+  });
+  colombia.push({
+    name: "Nath",
+    salary: 1500,
+  });
+  colombia.push({
+    name: "Luisa",
+    salary: 1800,
+  });
+  colombia.push({
+    name: "Laura",
+    salary: 1000,
+  });
+  colombia.push({
+    name: "Daniela",
+    salary: 2200,
+  });
+  colombia.push({
+    name: "Esperancita",
+    salary: 200,
+  });
+  colombia.push({
+    name: "Carla",
+    salary: 500,
+  });
+  colombia.push({
+    name: "Antonieta",
+    salary: 1500,
+  });
+  colombia.push({
+    name: "Alicia",
+    salary: 1300,
+  });
+  colombia.push({
+    name: "Ana",
+    salary: 2400,
+  });
+  colombia.push({
+    name: "Julia",
+    salary: 3400,
+  });
+  colombia.push({
+    name: "Rosa",
+    salary: 400,
+  });
+  colombia.push({
+    name: "Angélica",
+    salary: 400,
+  });
+  colombia.push({
+    name: "Tatiana",
+    salary: 400,
+  });
+  colombia.push({
+    name: "Lorena",
+    salary: 600,
+  });
+  colombia.push({
+    name: "Carolina",
+    salary: 1600,
+  });
+  colombia.push({
+    name: "Fernanda",
+    salary: 2600,
+  });
+  colombia.push({
+    name: "Nora",
+    salary: 1000,
+  });
+  colombia.push({
+    name: "Gisselle",
+    salary: 2000,
+  });
+  colombia.push({
+    name: "Bill Gates",
+    salary: 100000000,
+  });
+
+const salarios = colombia.map(
+    function(persona){
+        return persona.salary;
+    }
     
+);
+
+const salarycolsorted= salarios.sort(
+    function(salarioa,salariob){
+        return salarioa-salariob;
+});
+
+/* function espar(numero){
+    return (numero%2===0); 
+} */
+function calcularmedianasalarios(listacolombia){
+    const mitad = parseInt(listacolombia.length/2);
+    
+    if (listacolombia.length%2===0){
+        const elemento1 = listacolombia[mitad-1];        
+        const elemento2 = listacolombia[mitad];        
+        const elemento3 = calcularmediana([
+            elemento1,
+            elemento2
+        ]);
+        return elemento3;
+    }else{
+        const salariopersona = listacolombia[mitad];
+        
+        return salariopersona;
+    }
+};
+const medianadelosalarios = calcularmedianasalarios(salarycolsorted);
+//mediana del top 10%
+const splicestart= (salarycolsorted.length*(90))/100;
+const spliceend= salarycolsorted.length-splicestart;
+const salarioscoltop10 = salarycolsorted.splice(
+    splicestart,
+    spliceend
+);  
+const medianatopcol10 = calcularmedianasalarios(salarioscoltop10);
+
+console.log({
+    medianadelosalarios,
+    medianatopcol10
+});
